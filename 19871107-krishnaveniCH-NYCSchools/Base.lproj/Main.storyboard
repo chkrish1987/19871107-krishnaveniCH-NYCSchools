@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s0E-dE-v06">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--List ViewVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NYCListViewVC" customModule="_9871107_krishnaveniCH_NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7fg-3T-OGD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="nycListCell" rowHeight="155" id="fG0-u7-ZuG" customClass="NYCSHTableViewCell" customModule="_9871107_krishnaveniCH_NYCSchools" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="155"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fG0-u7-ZuG" id="onq-8Z-haj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bu-20-IWg">
+                                                    <rect key="frame" x="15" y="18" width="345" height="158"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address: 8-21 Bay 25th St, Far Rockaway, NY 11691" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixw-WM-Axl">
+                                                            <rect key="frame" x="26" y="54" width="311" height="53"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEE-ou-c6D">
+                                                            <rect key="frame" x="8" y="8" width="10" height="142"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="1" green="0.39867074520000001" blue="0.40485128399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="School Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5J-EO-el5">
+                                                            <rect key="frame" x="26" y="8" width="304" height="46"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <color key="textColor" name="AccentColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" systemColor="labelColor"/>
+                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgL-vW-f9B">
+                                                            <rect key="frame" x="26" y="115" width="311" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" systemColor="systemGreenColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0l-K3-CsQ">
+                                                            <rect key="frame" x="268" y="102" width="53" height="39"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="phone.circle.fill" catalog="system"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardView" destination="2bu-20-IWg" id="hwH-8W-Al0"/>
+                                            <outlet property="schoolAddrLbl" destination="ixw-WM-Axl" id="tgu-Hi-VEk"/>
+                                            <outlet property="schoolNameLbl" destination="C5J-EO-el5" id="8WG-TT-ZqH"/>
+                                            <outlet property="schoolPhoneNumBtn" destination="Z0l-K3-CsQ" id="jR2-zN-TmY"/>
+                                            <outlet property="schoolPhoneNumLbl" destination="MgL-vW-f9B" id="GeK-bC-lvD"/>
+                                            <outlet property="sideBarView" destination="nEE-ou-c6D" id="5Pv-oP-W1v"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="YQz-bQ-FBp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3DP-ji-00e"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KFB-xQ-2sx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="YIQ-Jh-ES4">
+                            <connections>
+                                <action selector="reloadAction:" destination="BYZ-38-t0r" id="xiy-Kb-d5D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="reloadBtn" destination="YIQ-Jh-ES4" id="SkM-4N-ic4"/>
+                        <outlet property="tableView" destination="7fg-3T-OGD" id="x7X-3d-ubb"/>
+                        <segue destination="mpW-pC-L0m" kind="show" identifier="HSWithSATScoreSegue" id="8rT-CS-dNg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045.5999999999999" y="3.1484257871064472"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qcd-rI-QtR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s0E-dE-v06" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WZL-ON-qJC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sSC-gz-uCI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9t-lP-56i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
+        </scene>
+        <!--School DetailVC-->
+        <scene sceneID="cC2-yG-3hc">
+            <objects>
+                <tableViewController id="mpW-pC-L0m" customClass="NYCSchoolDetailVC" customModule="_9871107_krishnaveniCH_NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="jjP-Ys-6v2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HSSATScoresTableViewCell" rowHeight="160" id="ibG-sl-G0F" customClass="HSSatScoresTableViewCell" customModule="_9871107_krishnaveniCH_NYCSchools" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="160"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ibG-sl-G0F" id="ndW-9r-iFe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LNB-jb-dEN">
+                                            <rect key="frame" x="20" y="30" width="335" height="120"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWR-o0-x2L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                                    <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8of-wj-IZP">
+                                                    <rect key="frame" x="0.0" y="50" width="335" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="RUM-1m-rJ3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ax-ta-nNZ">
+                                                    <rect key="frame" x="0.0" y="75" width="335" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="3mc-sF-q15"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek5-WC-KKf">
+                                                    <rect key="frame" x="0.0" y="100" width="335" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="qDm-Mr-W8L"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                    <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ek5-WC-KKf" secondAttribute="bottom" id="hKT-rc-lkC"/>
+                                                <constraint firstItem="EWR-o0-x2L" firstAttribute="top" secondItem="LNB-jb-dEN" secondAttribute="top" id="oSh-w2-w4Z"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LNB-jb-dEN" firstAttribute="leading" secondItem="ndW-9r-iFe" secondAttribute="leading" constant="20" id="6nF-pW-dWH"/>
+                                        <constraint firstAttribute="bottom" secondItem="LNB-jb-dEN" secondAttribute="bottom" constant="10" id="DaQ-5S-okS"/>
+                                        <constraint firstAttribute="trailing" secondItem="LNB-jb-dEN" secondAttribute="trailing" constant="20" id="Lcb-a4-Txf"/>
+                                        <constraint firstItem="LNB-jb-dEN" firstAttribute="top" secondItem="ndW-9r-iFe" secondAttribute="top" constant="30" id="kCO-Br-Mae"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="hsNameLbl" destination="EWR-o0-x2L" id="A1I-bl-2Pk"/>
+                                    <outlet property="satMathAvgScoreLbl" destination="8Ax-ta-nNZ" id="AcJ-w6-LZA"/>
+                                    <outlet property="satReadingAvgScoreLbl" destination="8of-wj-IZP" id="zM1-oC-PM9"/>
+                                    <outlet property="satWritingAvgScoreLbl" destination="ek5-WC-KKf" id="nrZ-Dk-WVU"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HSOverViewTableViewCell" rowHeight="165" id="tiY-sr-luY" customClass="HSOverviewTableViewCell" customModule="_9871107_krishnaveniCH_NYCSchools" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="215.5" width="375" height="165"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tiY-sr-luY" id="eLx-DO-bO3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4X-rx-HVj">
+                                            <rect key="frame" x="20" y="70" width="335" height="75"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trm-Tb-ObW">
+                                            <rect key="frame" x="20" y="30" width="62.5" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="dX5-yV-QUo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                            <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Trm-Tb-ObW" secondAttribute="trailing" constant="20" symbolic="YES" id="071-6u-pTE"/>
+                                        <constraint firstItem="Trm-Tb-ObW" firstAttribute="leading" secondItem="eLx-DO-bO3" secondAttribute="leading" constant="20" id="J3b-xk-h1i"/>
+                                        <constraint firstAttribute="bottom" secondItem="j4X-rx-HVj" secondAttribute="bottom" constant="20" id="Oc8-8h-SYj"/>
+                                        <constraint firstAttribute="trailing" secondItem="j4X-rx-HVj" secondAttribute="trailing" constant="20" id="fVN-vp-4tL"/>
+                                        <constraint firstItem="Trm-Tb-ObW" firstAttribute="top" secondItem="eLx-DO-bO3" secondAttribute="top" constant="30" id="gSn-TR-Rog"/>
+                                        <constraint firstItem="j4X-rx-HVj" firstAttribute="top" secondItem="Trm-Tb-ObW" secondAttribute="bottom" constant="15" id="li8-vH-ewk"/>
+                                        <constraint firstItem="j4X-rx-HVj" firstAttribute="leading" secondItem="eLx-DO-bO3" secondAttribute="leading" constant="20" id="q3F-Kx-RzQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="hsOverviewLbl" destination="j4X-rx-HVj" id="UjM-9Q-aRI"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HSContactTableViewCell" rowHeight="126" id="l1I-nC-AON" customClass="HSContactTableViewCell" customModule="_9871107_krishnaveniCH_NYCSchools" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="380.5" width="375" height="126"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l1I-nC-AON" id="0Xv-X2-SF2">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRY-Ff-tkK">
+                                            <rect key="frame" x="25" y="20" width="325" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                            <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNU-kB-qxm">
+                                            <rect key="frame" x="25" y="40" width="325" height="46"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCG-Tx-ZQA">
+                                            <rect key="frame" x="25" y="106" width="325" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <color key="textColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xCG-Tx-ZQA" firstAttribute="top" secondItem="cNU-kB-qxm" secondAttribute="bottom" constant="20" id="0zg-fd-hnC"/>
+                                        <constraint firstAttribute="trailing" secondItem="bRY-Ff-tkK" secondAttribute="trailing" constant="25" id="5OY-dC-IqF"/>
+                                        <constraint firstAttribute="trailing" secondItem="xCG-Tx-ZQA" secondAttribute="trailing" constant="25" id="ACX-vK-4m4"/>
+                                        <constraint firstItem="cNU-kB-qxm" firstAttribute="top" secondItem="bRY-Ff-tkK" secondAttribute="bottom" constant="20" id="KBa-sZ-jrM"/>
+                                        <constraint firstItem="xCG-Tx-ZQA" firstAttribute="leading" secondItem="0Xv-X2-SF2" secondAttribute="leading" constant="25" id="Pe7-6G-v4E"/>
+                                        <constraint firstAttribute="bottom" secondItem="xCG-Tx-ZQA" secondAttribute="bottom" constant="20" id="SJx-AI-tHg"/>
+                                        <constraint firstItem="cNU-kB-qxm" firstAttribute="leading" secondItem="0Xv-X2-SF2" secondAttribute="leading" constant="25" id="ZdU-aM-rKJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="cNU-kB-qxm" secondAttribute="trailing" constant="25" id="a5E-dS-E73"/>
+                                        <constraint firstItem="bRY-Ff-tkK" firstAttribute="leading" secondItem="0Xv-X2-SF2" secondAttribute="leading" constant="25" id="cfQ-Ro-1om"/>
+                                        <constraint firstItem="bRY-Ff-tkK" firstAttribute="top" secondItem="0Xv-X2-SF2" secondAttribute="top" constant="20" id="qgj-ox-Wih"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="hsAddressLbl" destination="bRY-Ff-tkK" id="wIW-Pp-BhO"/>
+                                    <outlet property="hsPhoneLbl" destination="cNU-kB-qxm" id="oJQ-nm-4gl"/>
+                                    <outlet property="hsWebsiteLbl" destination="xCG-Tx-ZQA" id="Vca-BU-7lg"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HSAddressTableViewCell" rowHeight="165" id="dUh-oX-iUs" customClass="HSAddressTableViewCell" customModule="_9871107_krishnaveniCH_NYCSchools" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="506.5" width="375" height="165"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dUh-oX-iUs" id="fhb-ZG-OK3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <mapView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fie-oX-TYe">
+                                            <rect key="frame" x="20" y="20" width="335" height="125"/>
+                                        </mapView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="fie-oX-TYe" secondAttribute="trailing" constant="20" id="3os-uO-vS9"/>
+                                        <constraint firstItem="fie-oX-TYe" firstAttribute="leading" secondItem="fhb-ZG-OK3" secondAttribute="leading" constant="20" id="GVq-j5-q6Q"/>
+                                        <constraint firstItem="fie-oX-TYe" firstAttribute="top" secondItem="fhb-ZG-OK3" secondAttribute="top" constant="20" id="nj2-01-i4m"/>
+                                        <constraint firstAttribute="bottom" secondItem="fie-oX-TYe" secondAttribute="bottom" constant="20" id="sp5-Pg-rbX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="hsAddressMapView" destination="fie-oX-TYe" id="n19-gv-JvW"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="mpW-pC-L0m" id="UHd-ov-4va"/>
+                            <outlet property="delegate" destination="mpW-pC-L0m" id="H0x-8b-rWR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="888-Bm-hJg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEk-TC-tuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="phone.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
